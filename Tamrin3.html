@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ln="fa" dir="rtl">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FORM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    body{
+        background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family:Tahoma, sans-serif; 
+    }
+    .form-box{
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        width: 350px;
+    }
+    input,textarea{
+        width: 100px;
+        padding:10px;
+        margin:10px 0;
+        border:2px solid #eee;
+        border-radius:10px;
+        box-sizing: border-box;
+    }
+    button{
+        background-color: #6c5ce7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    }
+    button:hover {
+    background-color: #1f0aa9;
+  }
+  </style>
+</head>
+<body>
+  <div class="form-box">
+    <h2 style="text-align: center;color:#0702ab">ارسال پیام</h2>
+    <form action="#" method="post">
+        <lable for="name">نام شما :</lable>
+        <input type="text" id="name" name="name" required>
+
+
+        <lable for="email">ایمیل :</lable>
+        <input type="email" id="email" name="email" required>
+
+        <label for="msg"> پیام : </label>
+        <textarea id="msg" name="message" rows="4"></textarea>
+
+        <button type="submit">ارسال اطلاعات</button>
+    </form>
+  </div>
+</body>
+</html>
