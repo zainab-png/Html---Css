@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+    <head>
+        <title>FORM</title>
+        <style>
+      body{
+        background-color:#55b794;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin:0;
+        font-family:Tahoma, sans-serif ;
+      }
+     .form_container{
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        width:350px;
+        text-align: center;
+     }
+     input{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border:1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+     }
+     button{
+        width: 100%;
+        background-color:#55b794 ;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-top:10px;
+
+     }
+
+     .logo{
+        width:80px;
+        height: auto;
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+     }
+    .checkbox{
+        display: flex;
+        align-items:center;
+        justify-content:flex-start;
+        direction: rtl;
+
+    }
+    .checkbox input{
+        width: auto;
+        margin: 0;
+    }
+
+   </style>
+    </head>
+    <body>
+<div class="form_container">
+<img src="images/لوگو.png" alt="logo" class="logo">
+<form action="">
+<input type="text" placeholder="نام مستعار">
+<input type="email" placeholder="ایمیل" >
+<input type="password" placeholder="رمز عبور" >
+<input type="password" placeholder="تکرار رمز عبور" >
+    <div class="checkbox">
+<input type="checkbox" id="terms" name="accept" required>
+    <label for="terms">شرایط  و قوانین سایت<a href="#">سبزلرن</a> را میپذیرم</label>
+    </div>
+<br>
+<button type="submit">ثبت نام</button>
+</form>
+
+    </body>
+</html>
